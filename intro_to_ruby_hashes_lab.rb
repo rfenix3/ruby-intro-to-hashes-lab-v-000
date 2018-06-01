@@ -33,7 +33,6 @@ def monopoly_with_third_tier
   monopoly[:railroads][:names][:b_and_o_railroad] = {}
   monopoly[:railroads][:names][:shortline] = {}
 
-  
   monopoly[:railroads][:rent_in_dollars] = {}
   monopoly[:railroads][:rent_in_dollars][:one_piece_owned] = 25
   monopoly[:railroads][:rent_in_dollars][:two_pieces_owned] = 50
@@ -43,12 +42,6 @@ def monopoly_with_third_tier
 end
 
 ########################
-
-
-
-
-
-      it "sets the 4th key of the :names hash to a symbol, :shortline, whose value is an empty hash" do
 
 
 
