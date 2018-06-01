@@ -71,11 +71,4 @@ def monopoly_with_fourth_tier
 end
 
 
-      it "sets the 1st key of the :pennsylvania_railroad hash to a string, 'mortgage_value', whose value is '$200'" do
-
-        expect(monopoly_with_fourth_tier.values[0][:names].has_key?(:pennsylvania_railroad)).to be true
-        expect(monopoly_with_fourth_tier.values[0][:names].values[1].has_key?("mortgage_value")).to be true
-        expect(monopoly_with_fourth_tier.values[0][:names].values[1].values[0]).to eq("$200")
-
-
 
