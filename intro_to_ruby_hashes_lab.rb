@@ -30,6 +30,8 @@ def monopoly_with_third_tier
   monopoly[:railroads][:names] = {}
   monopoly[:railroads][:names][:reading_railroad] = {}
   monopoly[:railroads][:names][:pennsylvania_railroad] = {}
+  monopoly[:railroads][:names][:b_and_o_railroad] = {}
+  monopoly[:railroads][:names][:shortline] = {}
 
   
   monopoly[:railroads][:rent_in_dollars] = {}
@@ -45,13 +47,6 @@ end
 
 
 
-      it "sets the 3rd key of the :names hash to a symbol, :b_and_o_railroad, whose value is an empty hash" do
-
-        expect(monopoly_with_third_tier.keys.count).to eq(1)
-        expect(monopoly_with_third_tier.values[0].values.count).to eq(3)
-        expect(monopoly_with_third_tier.values[0][:names].keys[2]).to eq(:b_and_o_railroad)
-        expect(monopoly_with_third_tier.values[0][:names].values[2]).to eq({})
-      end
 
       it "sets the 4th key of the :names hash to a symbol, :shortline, whose value is an empty hash" do
 
