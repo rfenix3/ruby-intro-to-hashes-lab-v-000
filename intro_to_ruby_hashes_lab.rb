@@ -56,8 +56,10 @@ def monopoly_with_fourth_tier
   monopoly[:railroads][:names][:pennsylvania_railroad] = {}
   monopoly[:railroads][:names][:pennsylvania_railroad]['mortgage_value'] = '$200'
   
-  
   monopoly[:railroads][:names][:b_and_o_railroad] = {}
+  monopoly[:railroads][:names][:b_and_o_railroad]['mortgage_value'] = '$400'
+  
+  
   monopoly[:railroads][:names][:shortline] = {}
 
   monopoly[:railroads][:rent_in_dollars] = {}
